@@ -1027,7 +1027,7 @@ summary {
     position: relative;
     max-height: 640px;
     width: 100%;
-    background-image: url("../../src/img/employer.png");
+    background-image: url("/img/employer.png");
     background-size: 100%;
     background-repeat: no-repeat;
   }
