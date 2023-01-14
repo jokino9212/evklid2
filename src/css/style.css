@@ -1056,7 +1056,7 @@ summary {
   .nav {
     margin-right: 0;
     position: absolute;
-    left: 0px;
+    left: -50px;
     top: 79px;
     z-index: 10;
     background-color: #FFFFFF;
@@ -1299,6 +1299,9 @@ summary {
   }
   .about__left-text {
     width: 100%;
+  }
+  .about__btn-container {
+    margin-bottom: 10px;
   }
   .how-work {
     margin-bottom: 60px;
