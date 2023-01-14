@@ -1,0 +1,1511 @@
+*,
+*:before,
+*:after
+    box-sizing: border-box
+
+html
+    font-family: 'Montserrat', sans-serif
+
+.outter
+    margin: 0 auto
+    max-width: 1920px
+
+.inner
+    margin: 0 auto
+    max-width: 1770px
+
+
+body
+    background-color: #E5E5E5
+   
+
+.btn
+    display: inline-block
+    cursor: pointer
+    background-color: #FF9900
+    color: white
+    border-radius: 16px
+    border: 1px solid #FF9900
+
+img
+    max-width: 100%
+
+a
+    color: #000000
+
+summary
+    list-style-type: none
+
+.title
+    font-weight: 400
+    font-size: 48px
+
+.heading
+    font-weight: 700
+    font-size: 24px
+
+.description
+    font-weight: 400
+    font-size: 16px
+    line-height: 32px
+
+// header
+.header
+    margin-bottom: 50px
+    
+    &__outter
+        box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1)
+        border-radius: 0px 0px 32px 32px
+        background-color: #FFFFFF
+        
+    &__inner
+        display: flex
+        align-items: center
+        padding-top: 14px
+        padding-bottom: 14px
+        position: relative
+    &__search
+        cursor: pointer
+        align-items: center
+        background-color: transparent
+        border: none
+        width: 32px
+        height: 32pxFnot
+        transition-property: all
+        transition-duration: .25s
+        transition-timing-function: ease
+
+        &:focus
+            outline: 2px solid #FF9900
+       
+    &__search-icon            
+        &:hover path
+            stroke: #FF9900
+
+        &:hover rect    
+            stroke: #FF9900
+
+    &__logo
+        margin-right: auto
+        min-width: 225px
+
+.burger
+    position: relative 
+    width: 30px
+    height: 23px
+    display: none
+    border: none
+    padding: 0
+    cursor: pointer
+    background-color: transparent
+   
+    &:focus
+        outline: 2px solid #FF9900
+        outline-offset: 2px
+
+    &:active
+       
+    &__line
+        position: absolute
+        left: 0
+        top: 50%
+        width: 100%
+        height: 3px
+        background-color: #000000
+        transform: translateY(-50%)   
+        transition: opacity 0.3s ease-in-out 
+        
+    &::before,
+    &::after
+        content: ""
+        position: absolute  
+        left: 0  
+        width: 100%
+        height: 3px
+        background-color: #000000   
+        transition: transform 0.3s ease-in-out
+       
+    &::before
+        top: 0 
+        
+    &::after
+        bottom: 0
+
+.nav
+    margin-right: 260px
+    font-size: 18px
+    font-weight: 600
+    line-height: 21.94px
+
+    &__list
+        display: flex
+        flex-direction: row
+        align-self: center
+        
+    &__item
+        transition-property: all
+        transition-duration: .3s
+        transition-timing-function: ease
+        margin-right: 85px
+
+        &:last-child
+            margin-right: 0px
+       
+    &__link
+        border: 2px solid transparent
+
+        &:hover
+            border-bottom: 2px solid #FF9900
+
+        &:focus
+            outline: none
+            border:  2px solid #FF9900 
+
+        &:active
+            color: #FF9900
+            border-bottom: 2px solid #FF9900
+
+// Форма поиска 
+.search-form
+    display: flex
+    align-items: center
+    position: absolute
+    top: -90px
+    right: 0
+    padding: 16px 13px 16px 32px
+    border-radius: 24px
+    background-color: white
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12)
+    font-size: 18px
+    line-height: 21.94px
+    opacity: 0
+    transition: top .5s, opacify .5s
+
+    &__input
+        padding-top: 2px
+        padding-bottom: 5px
+        border: none
+        border-radius: 0
+        border-bottom: 1px solid #CACACA
+
+        &:focus
+            outline: none
+            border: 2px solid #FF9900
+
+.search-form_show
+    display: flex
+    top: 20px
+    right: 0
+    opacity: 1
+
+// Section slider
+.slider
+    margin-bottom: 50px
+    max-height: 620px
+    
+    &__outter
+        height: 100%
+        overflow: hidden
+    
+    &__inner
+        position: relative
+        padding: 0px 0 100px 0
+        height: 100%
+        width: 100% 
+        
+
+    &__info
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        position: relative
+        padding: 100px 0 100px 80px
+        max-width: 987px
+        z-index: 2
+        pointer-events: none
+
+    &__title
+        margin-bottom: 24px
+        font-weight: 800
+        font-size: 70px
+        line-height: 85.33px
+        color: #FFFFFF
+
+    &__heading
+        margin-bottom: 90px
+        line-height: 29.26px
+        color: #FFFFFF
+
+    &__btn
+        padding: 25px 39px
+        font-size: 23px
+        font-weight: 700
+        line-height: 28.04px
+        color: #FFFFFF
+        outline: none
+
+        &:hover
+            background-color: #FFB84D
+            
+        &:focus
+            background-color: #FFB84D
+            
+        &:active
+            background-color: #E1670E
+
+    &__swiper
+        position: absolute
+        width: 100%
+        height: 620px
+        top: 0
+        left: 0
+        
+    &__wrapper
+        height: 100%
+
+.swiper-slide   
+    height: 100%
+    background-repeat: no repeat
+    background-size: cover
+    background-position: center
+
+// section about
+.about
+    margin-bottom: 100px
+
+    &__inner
+    &__title
+        margin-bottom: 20px
+
+    &__description 
+        margin-bottom: 50px  
+        max-width: 1235px
+
+    &__box  
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+    &__left
+        position: relative
+        height: 622px
+        background-image: url('/src/img/employer.png') 
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 32px
+        flex: 0.2 1 48.5%
+        
+    &__left-content
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 50px
+        bottom: 0
+        width: 100%
+        background-color: rgba(0, 0, 0, 0.5)
+        border-radius: 32px
+        
+    &__text-container
+        max-width: 433px
+
+    &__left-text 
+        
+        font-weight: 700
+        line-height: 32px
+        color: white
+
+    &__btn-container  
+    &__link 
+        padding: 20px 38px
+        font-weight: 700
+        color: white
+        background-color: transparent
+        outline: none
+        color: white
+
+        &:hover
+            background-color: #FF9900
+
+        &:focus
+            background-color: #FF9900
+
+        &:active
+            background-color: #E1670E
+        
+    &__right
+        display: flex
+        flex-direction: column
+        flex: 0.2 1 48.5%
+        
+    &__card
+        padding: 64px 115px 63px 59px
+        display: flex
+        margin-bottom: 32px
+        border: 1px solid #CACACA
+        border-radius: 32px
+        flex: 0.2 1 48.5%
+
+        &:last-child
+            margin-bottom: 0
+        
+    &__card-image
+        margin-right: 49px
+        flex: 1 1 25%
+
+    &__card-icon   
+    &__card-content    
+        flex: 1 1 75%
+
+    &__card-heading
+        margin-bottom: 8px  
+        line-height: 29.26px
+
+    &__card-description
+
+// section how work
+.how-work
+    margin-bottom: 111px
+    
+    &__outter
+    &__inner
+    &__title
+        margin-bottom: 50px
+        line-height: 58.51px
+
+    &__list-btn
+        margin-bottom: 45px
+        display: flex
+
+    &__item-lnk
+        margin-right: 86px
+
+        &:last-child
+            margin-right: 0
+
+        &:first-child
+            margin-right: 85px
+
+    &__lnk
+        border: none
+        background-color: transparent
+        &:hover
+            color: #FF9900
+
+        &:focus
+            outline: 2px solid #FF9900
+
+        &:active 
+            color: #E1670E
+
+    
+
+    &__left
+    &__heading
+        margin-bottom: 8px
+        line-height: 32px
+
+    &__description
+        margin-bottom: 18px
+        max-width: 758px    
+
+    &__list-link
+        display: flex
+
+    &__item-btn
+        margin-right: 32px
+       
+    &__btn-link
+        display: inline-block
+        padding: 20px 38px
+        border: 1px solid transparent
+        outline: none
+        border-radius: 16px
+        outline: none
+        
+        &:hover
+            background-color: #FFB84D
+            border: 1px solid #FFB84D
+
+        &:focus
+            background-color: #FFB84D
+            border: 1px solid #FFB84D
+
+        &:active
+            background-color: #E1670E
+            border: 1px solid #E1670E
+
+        &--white
+            background-color: #E5E5E5
+            color: #000000
+            border: 1px solid #000000
+
+            &:hover
+                background-color: #666666
+                color: #FFFFFF
+                border: 1px solid #666666
+
+            &:focus-visible
+                background-color: #666666
+                color: #FFFFFF
+                border: 1px solid #666666
+
+            &:active
+                background-color: #000000
+                color: #FFFFFF
+                border: 1px solid #000000
+           
+    &__right
+    &__img
+
+
+
+.tab-content
+    display: none
+    margin-top: 30px
+
+    &__item
+        display: flex
+        justify-content: space-between
+
+    &__left
+        width: 50%
+
+.tab
+    &__title
+        margin-bottom: 5px
+
+    &__description
+        padding-right: 60px 
+        margin-top: 0
+
+.tab-content-active
+    display: block    
+
+
+// section questions
+.questions
+    margin-bottom: 100px
+
+    &__title
+        margin-bottom: 32px
+        line-height: 58.51px
+
+.accordion  
+    max-width: 1770px
+   
+    &__item
+        border-top: 1px solid #CACACA
+        border-bottom: 1px solid #CACACA
+        
+        &:hover
+            border-color: #FF9900
+
+        &:focus
+            border-color: #FF9900
+
+        &:active
+            color: #000000
+               
+    &__control
+        display: flex
+        justify-content: space-between
+        cursor: pointer
+        padding-top: 37px
+        padding-bottom: 23px
+
+        &:hover
+            color: #FF9900
+           
+        &:focus
+            color: #FF9900
+            
+        &:active
+           color: #000000
+            
+    &__heading
+        line-height: 32px
+    
+    &__icon
+        position: relative
+        display: inline-block
+        min-width: 50px
+        height: 50px
+        border-radius: 100%
+        background-color: #CACACA
+
+        &:hover
+            background-color: #FF9900
+
+        &:focus
+            background-color: #FF9900
+            
+    &__icon::before
+        content: ""
+        position: absolute
+        top: 50%
+        left: 50%
+        width: 50%
+        height: 1px
+        transform: translate(-50%, 50%)
+        background-color: #000000
+        
+    &__icon::after
+        content: ""
+        position: absolute
+        left: 50%
+        width: 1px
+        height: 50%
+        transform: translate(-50%, 50%)
+        background-color: #000000
+
+        &:hover
+            background-color: white
+            
+
+        &:focus  
+            background-color: white
+       
+    &__body
+        padding-bottom: 40px
+
+    &__item[open] .accordion__icon
+        transform: rotate(45deg)    
+        
+
+// footer
+.footer
+    
+
+    &__outter
+        background-color: #000000
+    &__inner
+        padding-top: 50px
+        padding-bottom: 50px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+    &__cl-1
+        flex: 1 1 20%
+
+    &__logo-lnk
+        display: inline-block
+        margin-bottom: 20px
+
+    &__logo 
+    &__nav
+        margin-bottom: 90px
+        color: #CACACA
+        
+    &__nav-list
+        line-height: 36px
+
+    &__nav-item
+        
+    &__nav-link
+        color: #CACACA
+
+        &:hover
+           color: #FF9900
+
+        &:focus
+            outline: 2px solid #FF9900
+
+        &:active
+            color: #E1670E
+
+    &__social-list
+        display: flex
+        flex-direction: row
+        
+    &__social-item
+        margin-right: 25px    
+        width: 61px
+        height: 61px
+
+        &:focus-within
+            outline: 2px solid #FF9900
+  
+    &__social-link  
+        &:focus
+            outline: 2px solid #FF9900 
+            
+    &__social-icon
+        display: block
+        width: 60px
+        height: 60px
+        background-size: cover
+        background-repeat: no-repeat
+      
+        &--ok
+            background-image: url('/src/icons/ok.svg')
+
+            &:hover
+                background-image: url('/src/icons/okor.svg')
+            
+            &:active
+                background-image: url('/src/icons/okred.svg')
+
+        &--vk
+            &:hover path
+                fill: #FF9900
+
+            &:active path
+                fill: #E1670E
+                
+    &__cl-2
+       flex: 1 1 32%
+        
+    &__title
+        margin-bottom: 25px
+        color: #CACACA
+        line-height: 58.51px
+        
+    &__form
+    &__wrap-input
+        margin-bottom: 25px
+          
+        &:last-child
+            margin-bottom: 32px
+
+        &--name
+            
+        &--email
+        &--text
+    &__input
+        width: 90%
+        padding-top: 14px
+        padding-bottom: 14px
+        padding-left: 24px
+        background-color: #414141
+        border: none
+        border-radius: 16px
+        line-height: 32px
+        color: #CACACA
+        &:hover
+            background-color: #666666
+
+        &:focus
+            background-color: #666666
+            outline: none
+
+        &:active
+            color: #FFFFFF
+                
+        &--name
+        &--email
+        &--text
+            margin-bottom: 45px
+            padding-bottom: 104px
+
+    &__box-btn-checkbox
+        display: flex
+        align-items: center
+
+    &__btn 
+        margin-right: 22px
+        padding: 19px 52px
+        outline: none
+        font-weight: 700
+        line-height: 19.5px
+    
+        &:hover
+            background-color: #FFB84D
+
+        &:focus-visible
+            background-color: #ffb84D
+
+        &:active
+            background-color: #E1670E
+                
+    &__wrap-checkbox
+        position: relative
+        color: #CACACA
+        line-height: 32px
+        
+    &__checkbox
+        -webkit-appearance: none
+        appearance: none
+        position: absolute
+        &:checked + .footer__checkbox-label::before
+            background-color: transparent
+
+        &:checked + .footer__checkbox-label::after
+            opacity: 1
+        
+    &__checkbox-label
+        padding-left: 18px
+        cursor: pointer
+
+        &::before
+            content: ""
+            display: inline-block
+            width: 14px
+            height: 14px
+            border: 1px solid #CACACA
+            background-color: transparent
+            position: absolute
+            top: 10px
+            left: 0
+            z-index: 1
+            border-radius: 1px
+
+        &::after
+            content: ""
+            display: inline-block
+            width: 10px
+            height: 10px
+            background-image: url('/src/icons/check.svg')
+            background-repeat: no-repeat
+            background-size: 9px 10px
+            position: absolute
+            top: 12px
+            left: 3px
+            z-index: 2
+            opacity: 0
+            transition: .2s
+
+    &__cl-3
+        padding-top: 87px
+        padding-bottom: 87px
+        flex: 1 1 6%
+
+    &__cl-1-for-mobile
+        display: none
+    &__description
+        max-width: 363px
+        color: #CACACA
+    
+.alert       
+    outline: 2px solid red          
+// media
+@media (min-width: 1921px) 
+    .outter
+        margin: 0 auto
+        max-width: 4000px
+        padding-left: 50px
+        padding-right: 50px
+    .inner
+        margin: 0 auto
+        max-width: 3900px
+    .header
+  
+        &__logo
+            margin-right: auto
+        
+        &__logo-img
+            min-width: 725px
+
+        &__search
+            min-width: 80px
+            min-height: 80px
+
+        &__search-icon
+            min-width: 80px 
+            min-height: 80px
+
+    .nav
+        font-size: 48px
+        line-height: 68px
+
+        &__item
+            margin-right: 220px
+
+    .slider 
+        margin-bottom: 100px
+
+        &__info
+            padding: 100px 0 100px 80px
+            max-width: none
+            
+        &__title
+            margin-bottom: 124px  
+            font-size: 122px
+            line-height: 150px
+         
+        &__heading
+            max-width: 1500px
+            line-height: 129.26px
+            font-size: 70px
+
+        &__btn
+            padding: 125px 375px
+            font-size: 70px
+           
+    .about
+        margin-bottom: 100px
+
+        &__title
+            margin-bottom: 25px
+            font-size: 100px
+
+        &__description 
+            margin-bottom: 50px  
+            max-width: 2835px
+            font-size: 32px
+            line-height: 50px
+
+        &__left
+            min-height: 1000px
+            max-height: 100%
+        
+        &__left-content
+            padding: 100px
+           
+        &__text-container
+            max-width: 833px
+
+        &__left-text 
+            font-size: 32px
+            line-height: 50px
+             
+        &__link 
+            padding: 40px 76px
+            font-size: 32px
+
+        &__right
+            max-height: 100%
+        
+            
+        &__card
+            padding-left: 10px
+            padding-right: 10px 
+            margin-bottom: 64px
+            
+        &__card-image
+            margin-right: 49px
+            
+        &__card-icon   
+            min-width: 90%
+       
+        &__card-heading
+            margin-bottom: 18px
+            font-size: 48px  
+            line-height: 68px
+
+        &__card-description
+            font-size: 32px
+            line-height: 50px
+               
+    .how-work
+        &__title
+            margin-bottom: 100px
+            font-size: 100px
+
+        &__item-lnk    
+            font-size: 36px
+            line-height: 40px 
+
+        &__box
+            justify-content: space-between
+
+        &__left 
+            margin-right: 100px
+            flex: 1 0 49.2%    
+
+        &__heading
+            margin-bottom: 20px
+            font-size: 48px
+            line-height: 68px
+
+        &__description
+            margin-bottom: 100px
+            font-size: 32px
+            line-height: 50px
+            max-width: 1750px
+            min-width: 900px
+        
+        &__right
+            flex: 1 0.65 49.2%
+                
+        &__img
+            size: 100%
+            min-width: 1000px
+            min-height: 780px
+
+        &__item-btn
+            margin-right: 100px
+            font-size: 32px
+            line-height: 50px
+        &__btn-link
+            padding: 40px 80px
+
+    .questions
+        margin-bottom: 100px
+
+        &__title
+            margin-bottom: 64px
+            margin-bottom: 100px
+            font-size: 100px
+
+    .accordion  
+        max-width: 3900px
+             
+        &__control
+            padding-top: 37px
+            padding-bottom: 23px
+
+        &__heading
+            font-size: 48px
+            line-height: 50px
+        
+        &__icon
+            min-width: 80px
+            height: 80px
+      
+        &__body
+            padding-bottom: 40px
+            font-size: 32px
+            line-height: 50px
+
+    .footer
+        &__title
+            font-size: 100px
+            margin-bottom: 80px
+
+        &__social-item
+            margin-right: 100px
+            width: 120px
+            height: 120px
+    
+        &__social-icon
+            width: 120px
+            height: 120px
+
+        &__input
+            font-size: 32px
+            line-height: 50px
+
+        &__btn    
+            padding: 40px 100px
+            font-size: 32px
+            line-height: 50px
+       
+        &__checkbox-label
+            padding-left: 32px
+            font-size: 32px
+            line-height: 50px
+
+            &::before
+                width: 28px
+                height: 28px
+
+            &::after
+                width: 20px
+                height: 20px
+                background-size: 18px 20px
+
+        &__description
+            max-width: none
+            font-size: 32px
+            line-height: 50px
+     
+@media (max-width: 1920px)
+    .outter
+        padding-left: 50px
+        padding-right: 50px
+        max-width: 1920px
+        margin: 0 auto
+
+    .inner
+        max-width: 1820px
+        
+@media (max-width:1366px)
+    .outter
+        margin: 0 auto
+        max-width: 1366px
+
+    .inner
+        margin: 0 auto
+        max-width: 1266px
+
+    .nav
+        margin-right: 100px
+
+        &__item
+            margin-right: 40px
+
+    .about
+        margin-bottom: 100px
+
+        &__title
+            margin-bottom: 20px
+
+        &__box  
+            display: flex
+            flex-direction: column
+        
+        &__left
+            display: inline-block
+            padding-top: 426px 
+            margin-bottom: 32px
+            position: relative
+            max-height: 640px
+            width: 100%
+            background-image: url('/src/img/employer.png') 
+            background-size: 100%
+            background-repeat: no-repeat
+           
+        &__card
+            padding: 64px 124px 64px 76px
+
+    .footer
+        &__cl-3 
+            display: none
+
+@media (max-width:1024px)
+    .outter
+        margin: 0 auto
+        max-width: 1024px
+       
+    .inner
+        margin: 0 auto
+        max-width: 924px
+
+    .header
+        &__burger
+            display: block
+            
+        &__logo   
+            margin: 0 auto     
+
+    .nav
+        margin-right: 0
+        position: absolute
+        left: 0px
+        top: 79px
+        z-index: 10
+        background-color: #FFFFFF
+        transition: transform 0.6s ease-in-out
+        transform: translateX(-101%)
+        
+
+        &__list
+            flex-direction: column
+            padding: 100px 106px 229px 50px
+            
+
+        &__item
+            margin-right: 0
+            
+
+        &__item:not(:last-child)   
+            margin-bottom: 60px
+
+        &__link
+            
+            font-size: 24px
+            font-weight: 700
+            line-height: 29.26px
+
+        &__is-active
+            
+            transform: none
+            
+            
+    .slider
+        &__info
+            padding: 160px 77px
+            margin-bottom: 35px
+        
+        &__title
+            max-width: none
+            font-size: 60px
+            line-height: 73.14px
+
+        &__heading
+            max-width: none
+            font-size: 20px
+           
+    .about
+        margin-bottom: 80px
+
+        &__title
+            margin-bottom: 20px
+
+        &__box  
+            display: flex
+            flex-direction: column
+        
+        &__left
+            display: inline-block
+            padding-top: 426px 
+            margin-bottom: 32px
+            position: relative
+            max-height: 640px
+            max-width: 924px
+            background-image: url('/src/img/employer.png') 
+            background-size: 924px 640px
+            background-repeat: no-repeat
+           
+        &__card
+            padding: 64px 124px 64px 76px
+      
+    .how-work
+        margin-bottom: 80px
+    
+        &__item-lnk
+            margin-right: 86px
+
+        &:last-child
+            margin-right: 0
+
+        &:first-child
+            margin-right: 85px
+ 
+       
+    
+        &__left
+            margin-right: 49px
+            flex: 1 1 42.6%
+
+        &__right
+            flex: 1 1 42.6%
+            width: 50%
+        
+        &__img
+            height: 100%
+            object-fit: cover
+
+    .questions
+        margin-bottom: 80px
+
+    .accordion
+        &__heading
+            font-size: 20px
+
+    .footer
+        &__cl-1
+            max-width: 271px
+            
+        &__cl-3
+            display: none
+            
+        
+@media (max-width:768px)  
+    .outter
+        max-width: 768px
+
+    .inner
+        max-width: 668px
+
+    .slider
+        &__title
+            font-size: 50px
+            line-height: 60.95px
+
+        &__heading
+            font-size: 18px
+            line-height: 21.94px
+
+    .about
+        
+        &__left-content
+            padding: 34px 40px
+
+        &__text-container
+            max-width: 366px
+
+        &__card
+            padding: 35px 48px 35px 40px
+
+        &__card-image
+            margin-right: 16px
+            max-width: 114px
+            max-height: 99px    
+            align-self: center
+    .how-work
+        &__title
+            margin-bottom: 20px
+            font-size: 24px
+            line-height: 29.26px
+
+        &__list-btn
+            margin-bottom: 16px
+            display: flex
+
+        &__item-lnk
+            margin-right: 44px
+
+            &:last-child
+                margin-right: 0
+
+            &:first-child
+                margin-right: 44px
+                
+        &__lnk
+            font-size: 14px
+            line-height: 17.07px 
+
+        &__item
+            display: flex
+            flex-direction: column-reverse
+            
+        &__left
+            margin-right: 0
+            max-width: 100%
+            width: 100%
+        &__heading
+            margin-bottom: 8px
+            font-size: 18px
+            line-height: 32px
+
+        &__description
+            margin-bottom: 18px
+            max-width: none
+            display: block
+            font-size: 14px
+            line-height: 28px
+
+        &__item-btn
+            margin-right: 10px
+
+        &__btn-link
+            display: inline-block
+            padding: 12px 44px
+            border: 1px solid transparent
+            border-radius: 16px    
+            font-size: 12px
+            line-height: 14.63px
+
+            &--white
+                border: 1px solid black
+                padding: 12px 32px
+
+        &__right
+            flex: 1 1 42.6%
+            width: 100%
+    .footer
+        &__inner
+            flex-direction: column
+
+        &__cl-1
+            display: none
+
+        &__cl-2  
+            margin-bottom: 50px   
+
+        &__cl-1-for-mobile
+            display: block
+
+@media (max-width:576px) 
+    .outter
+        padding-left: 15px
+        padding-right: 15px 
+        max-width: 576px 
+        
+    .inner
+        max-width: 476px   
+
+    .slider 
+        &__info
+            width: 100%
+            padding: 0
+    
+        &__title
+            padding-left: 45px
+            font-size: 31px
+            line-height: 43px
+
+        &__heading
+            padding-left: 45px
+            font-size: 20px
+            line-height: 27px
+
+        &__btn
+            min-width: 100%
+
+    .about
+        &__left-content
+            padding: 0
+            flex-direction: column
+
+        &__text-container  
+            width: 476px
+
+    .how-work
+        margin-bottom: 60px
+
+       
+      
+@media (max-width:320px) 
+    .outter
+        width: 320px 
+        padding: 0 
+
+    .inner
+        padding: 17px 0
+        width: 290px     
+
+    .header
+        margin-bottom: 30px
+
+        &__logo
+            max-width: 110px 
+            min-width: 110px
+
+        &__img   
+            max-width: 110px 
+            max-height: 35px 
+
+    .slider
+        margin-bottom: 60px
+
+        &__info
+            margin-bottom: 0
+            padding: 60px 21px
+            text-align: center
+
+        &__title
+            padding-left: 0
+            margin-bottom: 6px
+            font-size: 20px
+            line-height: 24.38px
+            
+        &__heading
+            padding-left: 0
+            margin-bottom: 32px
+            font-size: 12px
+            line-height: 14.63px
+        
+        &__btn
+            min-width: 10% !important
+            font-size: 12px
+            line-height: 14.63px
+            padding: 13px 28px
+
+    .about
+        &__title
+            font-size: 24px
+            line-height: 29.26px
+
+        &__description
+            margin-bottom: 14px
+            font-size: 14px
+            line-height: 28px
+
+        &__box
+            flex-direction: column
+
+        &__left
+            width: 100%
+            height: 200px
+            padding-top: 200px
+            margin-bottom: 250px
+            background-size: 100%
+            border-radius: 16px
+            
+        &__left-content 
+            padding: auto
+            align-items: start
+            flex-direction: column
+            padding: 0
+            bottom: -210px
+            background-color: transparent
+            border-radius: 32px
+            
+        &__left-text 
+            margin-bottom: 12px
+            max-width: none
+            font-weight: 400
+            font-size: 14px
+            line-height: 28px
+            color: #000000 
+
+        &__btn-container    
+            font-size: 12px
+            line-height: 14.63px
+
+        &__link 
+            padding: 12px 44px     
+            border: 2px solid  #FF9900
+            color: #FF9900
+        
+        &__card
+            
+            flex-direction: column
+            padding: 0
+            margin-bottom: 32px
+            border: none
+            
+        &:last-child
+            margin-bottom: 0
+        
+        &__card-image
+            margin-right: auto
+            margin-bottom: 12px
+            
+        &__card-icon
+           width: 64px
+           height: 49px
+
+        &__card-heading
+            font-size: 18px
+            line-height: 21.94px   
+
+        &__card-description
+            font-size: 14px 
+            line-height: 28px
+    
+    .questions
+        &__title
+            font-size: 24px
+            line-height: 29.26px 
+
+    .accordion
+        &__control
+            padding-top: 30px
+            padding-bottom: 30px
+            align-items: center
+
+        &__heading
+            font-size: 14px
+            line-height: 24px   
+
+        &__icon
+            min-width: 30px
+            height: 30px
+    .footer 
+        &__cl-2
+            margin-bottom: 16px
+
+        &__title  
+            font-size: 24px
+            line-height: 29.26px  
+
+        &__input
+            width: 100%
+
+            &--text
+                margin-bottom: 0
+
+        &__box-btn-checkbox
+            flex-direction: column
+
+        &__btn
+            margin-bottom: 12px
+            font-size: 12px
+            line-height: 14.63px
+            padding: 12px 28px
+
+        &__cl-1-for-mobile
+            text-align: center
+            
+        &__logo-lnk
+            max-width: 45.2%
+
+        &__social-list
+            justify-content: center
+
+        &__social-item
+            margin-right: 16px
+            max-width: 40px
+            max-height: 40px
+
+        &__social-icon
+            max-width: 40px
+            max-height: 40px
+        
+        
+  
