@@ -297,7 +297,7 @@ summary {
 .about__left {
   position: relative;
   height: 622px;
-  background-image: url("/src/img/employer.png");
+  background-image: url("../../src/img/employer.png");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 32px;
@@ -625,13 +625,13 @@ summary {
   background-repeat: no-repeat;
 }
 .footer__social-icon--ok {
-  background-image: url("/src/icons/ok.svg");
+  background-image: url("../../src/icons/ok.svg");
 }
 .footer__social-icon--ok:hover {
-  background-image: url("/src/icons/okor.svg");
+  background-image: url("../../src/icons/okor.svg");
 }
 .footer__social-icon--ok:active {
-  background-image: url("/src/icons/okred.svg");
+  background-image: url("../../src/icons/okred.svg");
 }
 .footer__social-icon--vk:hover path {
   fill: #FF9900;
@@ -737,7 +737,7 @@ summary {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-image: url("/src/icons/check.svg");
+  background-image: url("../../src/icons/check.svg");
   background-repeat: no-repeat;
   background-size: 9px 10px;
   position: absolute;
@@ -1027,7 +1027,7 @@ summary {
     position: relative;
     max-height: 640px;
     width: 100%;
-    background-image: url("/src/img/employer.png");
+    background-image: url("../../src/img/employer.png");
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -1111,7 +1111,7 @@ summary {
     position: relative;
     max-height: 640px;
     max-width: 924px;
-    background-image: url("/src/img/employer.png");
+    background-image: url("../../src/img/employer.png");
     background-size: 924px 640px;
     background-repeat: no-repeat;
   }
