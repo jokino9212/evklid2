@@ -86,7 +86,7 @@ summary
             stroke: #FF9900
 
     &__logo
-        margin-right: auto
+        display: block
         min-width: 225px
 
 .burger
@@ -98,13 +98,13 @@ summary
     padding: 0
     cursor: pointer
     background-color: transparent
-   
+
     &:focus
         outline: 2px solid #FF9900
         outline-offset: 2px
 
     &:active
-       
+
     &__line
         position: absolute
         left: 0
@@ -124,7 +124,7 @@ summary
         height: 3px
         background-color: #000000   
         transition: transform 0.3s ease-in-out
-       
+
     &::before
         top: 0 
         
@@ -776,26 +776,26 @@ summary
     &__description
         max-width: 363px
         color: #CACACA
-    
-.alert       
-    outline: 2px solid red          
+
 // media
 @media (min-width: 1921px) 
     .outter
-        margin: 0 auto
-        max-width: 4000px
+        // margin: 0 auto
+        max-width: 2660px
         padding-left: 50px
         padding-right: 50px
+
     .inner
-        margin: 0 auto
-        max-width: 3900px
+        // margin: 0 auto
+        max-width: 2560px
     .header
-  
+        
         &__logo
-            margin-right: auto
+            // margin-right: auto
+            // display: block
         
         &__logo-img
-            min-width: 725px
+            // min-width: 725px
 
         &__search
             min-width: 80px
@@ -806,13 +806,18 @@ summary
             min-height: 80px
 
     .nav
-        font-size: 48px
+        
         line-height: 68px
 
         &__item
-            margin-right: 220px
-
+            
+            font-size: 18px
+            margin-right: 20px
+        &__link
+            
+            font-size: 18px
     .slider 
+        
         margin-bottom: 100px
 
         &__info
