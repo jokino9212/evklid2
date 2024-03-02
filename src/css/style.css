@@ -745,22 +745,20 @@ summary {
   color: #CACACA;
 }
 
-.alert {
-  outline: 2px solid red;
-}
+
 
 @media (min-width: 1921px) {
   .outter {
     margin: 0 auto;
-    max-width: 4000px;
+    max-width: 2760px;
     padding-left: 50px;
     padding-right: 50px;
   }
   .inner {
     margin: 0 auto;
-    max-width: 3900px;
+    max-width: 2560px;
   }
-  .header__logo {
+  /* .header__logo {
     margin-right: auto;
   }
   .header__logo-img {
@@ -976,7 +974,7 @@ summary {
     max-width: none;
     font-size: 32px;
     line-height: 50px;
-  }
+  } */
 }
 @media (max-width: 1920px) {
   .outter {
